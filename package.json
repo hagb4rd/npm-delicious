@@ -1,0 +1,22 @@
+{
+  "name": "npm-delicious",
+  "version": "0.0.1",
+  "description": "Delicious API for node.js",
+  "main": "delicious.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hagb4rd/npm-delicious.git"
+  },
+  "keywords": [
+    "delicious"
+  ],
+  "author": "hagb4rd@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hagb4rd/npm-delicious/issues"
+  },
+  "homepage": "https://github.com/hagb4rd/npm-delicious"
+}
