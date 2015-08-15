@@ -165,8 +165,30 @@ var Delicious = function(client_id, client_secret, user, pass) {
 
 
 
+function formatAll(json, verbose) {
+  var verbose = false || verbose;
+  var text = "";
+  json.posts.post.forEach(function(elem, i) {
+    text += elem.$.description;
+    if(verbose)
+     text += "\t(" + elem.$.time.substring(0,10) + ")"
+    text += "\r\n";
+    text += "==============================================================\r\n";
+    text += elem.$.href + "\r\n";
+    text += "==============================================================\r\n"; 
+    //text += "--------------------------------------------------------------\r\n";
+    
+    if(elem.$.extended != "")
+      text += elem.$.extended + "\r\n";
+    text += "TAGS: #" + elem.$.tag.split(' ').join(' #') + "\r\n";
+    
+    text += "\r\n";
+    text += "\r\n";
+  })
+  return text;
+}
+
+
 //RUNTIME
-//console.log(argv.tags+"\n");
-console.log('RESULT\n====================\n');
 var api = new Delicious(client_id, client_secret, user, pass);
-api.getAll(argv.tags).then(function(json) { console.log(beautify(str.dump(json))) }).catch(console.dir);
+api.getAll(argv.tags).then(function(json) { console.log(formatAll(json)); }).catch(console.dir);
