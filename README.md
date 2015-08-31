@@ -27,7 +27,7 @@ delicious --tags=tag1,tag2,tagn
 
 more options
 
-* --tags=tag1,tag2 (optional) — Filter by this tags (seperate by comma)
+* --tags=tag1,tag2 (optional) — Filter by this tags (separate by comma)
 * --start={xx} (optional) — Start returning posts this many results into the set.
 * --results={xx} (optional) — Return up to this many results. By default, up to 1000 bookmarks are returned, and a maximum of 100000 bookmarks is supported via this API.
 * --fromdt={CCYY-MM-DDThh:mm:ssZ} (optional) — Filter for posts on this date or later.
@@ -50,6 +50,6 @@ more options
 
 ##Contact
 
-[`hagb4rd@gmail.com`](hagb4rd@gmail.com)
+[`hagb4rd@gmail.com`](https://github.com/hagb4rd)
 
 hail eris!
